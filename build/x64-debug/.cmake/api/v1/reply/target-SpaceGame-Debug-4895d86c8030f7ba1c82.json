@@ -1,0 +1,803 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "SpaceGame/bin/SpaceGame.exe"
+		},
+		{
+			"path" : "SpaceGame/bin/SpaceGame.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"set_property",
+			"conan_define_targets",
+			"conan_basic_setup",
+			"target_link_libraries",
+			"target_include_directories",
+			"target_precompile_headers"
+		],
+		"files" : 
+		[
+			"SpaceGame/CMakeLists.txt",
+			"build/x64-debug/conanbuildinfo.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 2340,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 943,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1013,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1433,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1083,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1223,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1503,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 2273,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1643,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1713,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1783,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 2203,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1923,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1993,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 2133,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1363,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1"
+				},
+				{
+					"fragment" : "-std:c++20"
+				},
+				{
+					"fragment" : "/YcD:/Source/PromisedEngine/build/x64-debug/SpaceGame/CMakeFiles/SpaceGame.dir/Debug/cmake_pch.hxx /FpD:/Source/PromisedEngine/build/x64-debug/SpaceGame/SpaceGame.dir/Debug/cmake_pch.pch /FID:/Source/PromisedEngine/build/x64-debug/SpaceGame/CMakeFiles/SpaceGame.dir/Debug/cmake_pch.hxx"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 19,
+					"define" : "HAVE_BZIP2"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "OPENDDL_STATIC_LIBARY"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "STB_TEXTEDIT_KEYTYPE=unsigned"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "flecs_STATIC"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 20,
+					"path" : "D:/Source/PromisedEngine/SpaceGame/."
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/glad/0.1.36/_/_/package/bddf1d266f3ce30e57c040ac2f4894bc2eec7e34/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/glfw/3.3.8/_/_/package/87788707645a6a7a0bda278a5f55360eeefe8ff3/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/flecs/3.0.4/_/_/package/164640aad040835ac89882393a96d89200694f04/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/tl-expected/20190710/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/assimp/5.2.2/_/_/package/1b4291ba5a28679d2d95c2798e096fccf50f638c/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/minizip/1.2.12/_/_/package/ceba830b4ab3226cf201e29b11e7d3683bce38f2/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/minizip/1.2.12/_/_/package/ceba830b4ab3226cf201e29b11e7d3683bce38f2/include/minizip"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/zlib/1.2.12/_/_/package/164640aad040835ac89882393a96d89200694f04/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/bzip2/1.0.8/_/_/package/d74f69022acf854c1ce6f27efa07ccbb6504e4b1/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/utfcpp/3.2.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/utfcpp/3.2.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include/utf8cpp"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/pugixml/1.12.1/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/kuba-zip/0.2.4/_/_/package/164640aad040835ac89882393a96d89200694f04/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/poly2tri/cci.20130502/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/rapidjson/cci.20211112/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/.conan/20362e/1/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/clipper/4.10.0/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/stb/cci.20210910/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/openddl-parser/0.5.0/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/glm/cci.20220420/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/luau/0.544/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					22
+				],
+				"standard" : "20"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 21,
+					"header" : "D:/Source/PromisedEngine/SpaceGame/Common.h"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1"
+				},
+				{
+					"fragment" : "-std:c++20"
+				},
+				{
+					"fragment" : "/YuD:/Source/PromisedEngine/build/x64-debug/SpaceGame/CMakeFiles/SpaceGame.dir/Debug/cmake_pch.hxx /FpD:/Source/PromisedEngine/build/x64-debug/SpaceGame/SpaceGame.dir/Debug/cmake_pch.pch /FID:/Source/PromisedEngine/build/x64-debug/SpaceGame/CMakeFiles/SpaceGame.dir/Debug/cmake_pch.hxx"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 19,
+					"define" : "HAVE_BZIP2"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "OPENDDL_STATIC_LIBARY"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "STB_TEXTEDIT_KEYTYPE=unsigned"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "flecs_STATIC"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 20,
+					"path" : "D:/Source/PromisedEngine/SpaceGame/."
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/glad/0.1.36/_/_/package/bddf1d266f3ce30e57c040ac2f4894bc2eec7e34/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/glfw/3.3.8/_/_/package/87788707645a6a7a0bda278a5f55360eeefe8ff3/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/flecs/3.0.4/_/_/package/164640aad040835ac89882393a96d89200694f04/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/tl-expected/20190710/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/assimp/5.2.2/_/_/package/1b4291ba5a28679d2d95c2798e096fccf50f638c/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/minizip/1.2.12/_/_/package/ceba830b4ab3226cf201e29b11e7d3683bce38f2/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/minizip/1.2.12/_/_/package/ceba830b4ab3226cf201e29b11e7d3683bce38f2/include/minizip"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/zlib/1.2.12/_/_/package/164640aad040835ac89882393a96d89200694f04/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/bzip2/1.0.8/_/_/package/d74f69022acf854c1ce6f27efa07ccbb6504e4b1/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/utfcpp/3.2.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/utfcpp/3.2.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include/utf8cpp"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/pugixml/1.12.1/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/kuba-zip/0.2.4/_/_/package/164640aad040835ac89882393a96d89200694f04/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/poly2tri/cci.20130502/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/rapidjson/cci.20211112/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/.conan/20362e/1/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/clipper/4.10.0/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/stb/cci.20210910/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/openddl-parser/0.5.0/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/glm/cci.20220420/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+				},
+				{
+					"backtrace" : 19,
+					"isSystem" : true,
+					"path" : "C:/Users/evan_/.conan/data/luau/0.544/_/_/package/255fef913b09852b9ac19f13fe91677114965382/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					22
+				],
+				"standard" : "20"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 21,
+					"header" : "D:/Source/PromisedEngine/SpaceGame/Common.h"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				1,
+				4,
+				6,
+				8,
+				9,
+				13,
+				15
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "SpaceGame::@709735fa5186c2ac57e6",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\glad\\0.1.36\\_\\_\\package\\bddf1d266f3ce30e57c040ac2f4894bc2eec7e34\\lib\\glad.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\glfw\\3.3.8\\_\\_\\package\\87788707645a6a7a0bda278a5f55360eeefe8ff3\\lib\\glfw3.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "gdi32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\flecs\\3.0.4\\_\\_\\package\\164640aad040835ac89882393a96d89200694f04\\lib\\flecs_static.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "wsock32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\assimp\\5.2.2\\_\\_\\package\\1b4291ba5a28679d2d95c2798e096fccf50f638c\\lib\\assimp-vc143-mtd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\minizip\\1.2.12\\_\\_\\package\\ceba830b4ab3226cf201e29b11e7d3683bce38f2\\lib\\minizip.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\bzip2\\1.0.8\\_\\_\\package\\d74f69022acf854c1ce6f27efa07ccbb6504e4b1\\lib\\bz2.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\pugixml\\1.12.1\\_\\_\\package\\255fef913b09852b9ac19f13fe91677114965382\\lib\\pugixml.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\kuba-zip\\0.2.4\\_\\_\\package\\164640aad040835ac89882393a96d89200694f04\\lib\\zip.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\poly2tri\\cci.20130502\\_\\_\\package\\255fef913b09852b9ac19f13fe91677114965382\\lib\\poly2tri.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\zlib\\1.2.12\\_\\_\\package\\164640aad040835ac89882393a96d89200694f04\\lib\\zlib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "C:\\.conan\\20362e\\1\\lib\\draco.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\clipper\\4.10.0\\_\\_\\package\\255fef913b09852b9ac19f13fe91677114965382\\lib\\polyclipping.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\openddl-parser\\0.5.0\\_\\_\\package\\255fef913b09852b9ac19f13fe91677114965382\\lib\\openddlparser.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\luau\\0.544\\_\\_\\package\\255fef913b09852b9ac19f13fe91677114965382\\lib\\Luau.VM.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\luau\\0.544\\_\\_\\package\\255fef913b09852b9ac19f13fe91677114965382\\lib\\Luau.Analysis.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\luau\\0.544\\_\\_\\package\\255fef913b09852b9ac19f13fe91677114965382\\lib\\Luau.Compiler.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\luau\\0.544\\_\\_\\package\\255fef913b09852b9ac19f13fe91677114965382\\lib\\Luau.CodeGen.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "C:\\Users\\evan_\\.conan\\data\\luau\\0.544\\_\\_\\package\\255fef913b09852b9ac19f13fe91677114965382\\lib\\Luau.Ast.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "SpaceGame",
+	"nameOnDisk" : "SpaceGame.exe",
+	"paths" : 
+	{
+		"build" : "SpaceGame",
+		"source" : "SpaceGame"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				4,
+				6,
+				8,
+				9,
+				13,
+				15
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				5,
+				7,
+				10,
+				11,
+				12,
+				14
+			]
+		},
+		{
+			"name" : "Precompile Header File",
+			"sourceIndexes" : 
+			[
+				16,
+				17,
+				18,
+				19
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "build/x64-debug/SpaceGame/CMakeFiles/SpaceGame.dir/cmake_pch.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "SpaceGame/Application.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SpaceGame/Common.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SpaceGame/Engine/Engine.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "SpaceGame/Engine/Engine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SpaceGame/Engine/Rendering/Renderer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "SpaceGame/Engine/Rendering/Renderer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SpaceGame/Components/Terrain.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "SpaceGame/Components/Terrain.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "SpaceGame/Engine/Rendering/Shaders.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SpaceGame/Engine/Rendering/Shaders.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SpaceGame/Application.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SpaceGame/Engine/Models.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "SpaceGame/Engine/Models.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SpaceGame/Engine/Input.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "SpaceGame/Engine/Input.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"path" : "build/x64-debug/SpaceGame/CMakeFiles/SpaceGame.dir/Debug/cmake_pch.hxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "build/x64-debug/SpaceGame/CMakeFiles/SpaceGame.dir/Release/cmake_pch.hxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "build/x64-debug/SpaceGame/CMakeFiles/SpaceGame.dir/MinSizeRel/cmake_pch.hxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "build/x64-debug/SpaceGame/CMakeFiles/SpaceGame.dir/RelWithDebInfo/cmake_pch.hxx",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

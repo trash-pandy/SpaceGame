@@ -1,0 +1,166 @@
+[settings]
+    arch=x86_64
+    build_type=Debug
+    compiler=Visual Studio
+    compiler.cppstd=20
+    compiler.runtime=MDd
+    compiler.version=17
+    os=Windows
+
+[requires]
+    assimp/5.Y.Z
+    flecs/3.Y.Z
+    glad/0.1.36
+    glfw/3.Y.Z
+    glm/cci.20220420
+    luau/0.544
+    tl-expected/20190710.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Debug
+    compiler=Visual Studio
+    compiler.cppstd=20
+    compiler.runtime=MDd
+    compiler.version=17
+    os=Windows
+    os_build=Windows
+
+[full_requires]
+    assimp/5.2.2:1b4291ba5a28679d2d95c2798e096fccf50f638c
+    bzip2/1.0.8:d74f69022acf854c1ce6f27efa07ccbb6504e4b1
+    clipper/4.10.0:255fef913b09852b9ac19f13fe91677114965382
+    draco/1.5.3:1101f4821e3930bb4b4a4eea735c4f34adea5b3b
+    flecs/3.0.4:164640aad040835ac89882393a96d89200694f04
+    glad/0.1.36:bddf1d266f3ce30e57c040ac2f4894bc2eec7e34
+    glfw/3.3.8:87788707645a6a7a0bda278a5f55360eeefe8ff3
+    glm/cci.20220420:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    kuba-zip/0.2.4:164640aad040835ac89882393a96d89200694f04
+    luau/0.544:255fef913b09852b9ac19f13fe91677114965382
+    minizip/1.2.12:ceba830b4ab3226cf201e29b11e7d3683bce38f2
+    openddl-parser/0.5.0:255fef913b09852b9ac19f13fe91677114965382
+    opengl/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    poly2tri/cci.20130502:255fef913b09852b9ac19f13fe91677114965382
+    pugixml/1.12.1:255fef913b09852b9ac19f13fe91677114965382
+    rapidjson/cci.20211112:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    stb/cci.20210910:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    tl-expected/20190710:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    utfcpp/3.2.1:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    zlib/1.2.12:164640aad040835ac89882393a96d89200694f04
+
+[full_options]
+    assimp:double_precision=False
+    assimp:shared=False
+    assimp:with_3d=True
+    assimp:with_3ds=True
+    assimp:with_3ds_exporter=True
+    assimp:with_3mf=True
+    assimp:with_3mf_exporter=True
+    assimp:with_ac=True
+    assimp:with_amf=True
+    assimp:with_ase=True
+    assimp:with_assbin=True
+    assimp:with_assbin_exporter=True
+    assimp:with_assjson_exporter=True
+    assimp:with_assxml_exporter=True
+    assimp:with_b3d=True
+    assimp:with_blend=True
+    assimp:with_bvh=True
+    assimp:with_cob=True
+    assimp:with_collada=True
+    assimp:with_collada_exporter=True
+    assimp:with_csm=True
+    assimp:with_dxf=True
+    assimp:with_fbx=True
+    assimp:with_fbx_exporter=True
+    assimp:with_gltf=True
+    assimp:with_gltf_exporter=True
+    assimp:with_hmp=True
+    assimp:with_ifc=True
+    assimp:with_iqm=True
+    assimp:with_irr=True
+    assimp:with_irrmesh=True
+    assimp:with_lwo=True
+    assimp:with_lws=True
+    assimp:with_m3d=True
+    assimp:with_m3d_exporter=True
+    assimp:with_md2=True
+    assimp:with_md3=True
+    assimp:with_md5=True
+    assimp:with_mdc=True
+    assimp:with_mdl=True
+    assimp:with_mmd=True
+    assimp:with_ms3d=True
+    assimp:with_ndo=True
+    assimp:with_nff=True
+    assimp:with_obj=True
+    assimp:with_obj_exporter=True
+    assimp:with_off=True
+    assimp:with_ogre=True
+    assimp:with_opengex=True
+    assimp:with_opengex_exporter=True
+    assimp:with_pbrt_exporter=True
+    assimp:with_ply=True
+    assimp:with_ply_exporter=True
+    assimp:with_q3bsp=True
+    assimp:with_q3d=True
+    assimp:with_raw=True
+    assimp:with_sib=True
+    assimp:with_smd=True
+    assimp:with_step=True
+    assimp:with_step_exporter=True
+    assimp:with_stl=True
+    assimp:with_stl_exporter=True
+    assimp:with_terragen=True
+    assimp:with_x=True
+    assimp:with_x3d=True
+    assimp:with_x3d_exporter=True
+    assimp:with_x_exporter=True
+    assimp:with_xgl=True
+    bzip2:build_executable=True
+    bzip2:shared=False
+    clipper:shared=False
+    draco:enable_backwards_compatibility=True
+    draco:enable_mesh_compression=True
+    draco:enable_point_cloud_compression=True
+    draco:enable_predictive_edgebreaker=True
+    draco:enable_standard_edgebreaker=True
+    draco:shared=False
+    draco:target=draco
+    flecs:shared=False
+    glad:extensions=''
+    glad:gl_profile=core
+    glad:gl_version=4.5
+    glad:gles1_version=None
+    glad:gles2_version=None
+    glad:glsc2_version=None
+    glad:no_loader=False
+    glad:shared=False
+    glad:spec=gl
+    glfw:shared=False
+    glfw:vulkan_static=False
+    kuba-zip:shared=False
+    luau:shared=False
+    luau:with_cli=False
+    luau:with_web=False
+    minizip:bzip2=True
+    minizip:shared=False
+    minizip:tools=False
+    openddl-parser:shared=False
+    poly2tri:shared=False
+    pugixml:header_only=False
+    pugixml:no_exceptions=False
+    pugixml:shared=False
+    pugixml:wchar_mode=False
+    stb:with_deprecated=True
+    zlib:shared=False
+
+[recipe_hash]
+
+
+[env]
+

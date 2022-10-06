@@ -1,0 +1,183 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "assimp:double_precision=False\nassimp:shared=False\nassimp:with_3d=True\nassimp:with_3ds=True\nassimp:with_3ds_exporter=True\nassimp:with_3mf=True\nassimp:with_3mf_exporter=True\nassimp:with_ac=True\nassimp:with_amf=True\nassimp:with_ase=True\nassimp:with_assbin=True\nassimp:with_assbin_exporter=True\nassimp:with_assjson_exporter=True\nassimp:with_assxml_exporter=True\nassimp:with_b3d=True\nassimp:with_blend=True\nassimp:with_bvh=True\nassimp:with_cob=True\nassimp:with_collada=True\nassimp:with_collada_exporter=True\nassimp:with_csm=True\nassimp:with_dxf=True\nassimp:with_fbx=True\nassimp:with_fbx_exporter=True\nassimp:with_gltf=True\nassimp:with_gltf_exporter=True\nassimp:with_hmp=True\nassimp:with_ifc=True\nassimp:with_iqm=True\nassimp:with_irr=True\nassimp:with_irrmesh=True\nassimp:with_lwo=True\nassimp:with_lws=True\nassimp:with_m3d=True\nassimp:with_m3d_exporter=True\nassimp:with_md2=True\nassimp:with_md3=True\nassimp:with_md5=True\nassimp:with_mdc=True\nassimp:with_mdl=True\nassimp:with_mmd=True\nassimp:with_ms3d=True\nassimp:with_ndo=True\nassimp:with_nff=True\nassimp:with_obj=True\nassimp:with_obj_exporter=True\nassimp:with_off=True\nassimp:with_ogre=True\nassimp:with_opengex=True\nassimp:with_opengex_exporter=True\nassimp:with_pbrt_exporter=True\nassimp:with_ply=True\nassimp:with_ply_exporter=True\nassimp:with_q3bsp=True\nassimp:with_q3d=True\nassimp:with_raw=True\nassimp:with_sib=True\nassimp:with_smd=True\nassimp:with_step=True\nassimp:with_step_exporter=True\nassimp:with_stl=True\nassimp:with_stl_exporter=True\nassimp:with_terragen=True\nassimp:with_x=True\nassimp:with_x3d=True\nassimp:with_x3d_exporter=True\nassimp:with_x_exporter=True\nassimp:with_xgl=True\nbzip2:build_executable=True\nbzip2:shared=False\nclipper:shared=False\ndraco:enable_backwards_compatibility=True\ndraco:enable_mesh_compression=True\ndraco:enable_point_cloud_compression=True\ndraco:enable_predictive_edgebreaker=True\ndraco:enable_standard_edgebreaker=True\ndraco:shared=False\ndraco:target=draco\nflecs:shared=False\nglad:extensions=''\nglad:gl_profile=core\nglad:gl_version=4.5\nglad:gles1_version=None\nglad:gles2_version=None\nglad:glsc2_version=None\nglad:no_loader=False\nglad:shared=False\nglad:spec=gl\nglfw:shared=False\nglfw:vulkan_static=False\nkuba-zip:shared=False\nluau:shared=False\nluau:with_cli=False\nluau:with_web=False\nminizip:bzip2=True\nminizip:shared=False\nminizip:tools=False\nopenddl-parser:shared=False\npoly2tri:shared=False\npugixml:header_only=False\npugixml:no_exceptions=False\npugixml:shared=False\npugixml:wchar_mode=False\nstb:with_deprecated=True\nzlib:shared=False",
+    "requires": [
+     "1",
+     "2",
+     "4",
+     "5",
+     "6",
+     "19",
+     "20"
+    ],
+    "path": "conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "glad/0.1.36#0",
+    "options": "extensions=''\ngl_profile=core\ngl_version=4.5\ngles1_version=None\ngles2_version=None\nglsc2_version=None\nno_loader=False\nshared=False\nspec=gl",
+    "package_id": "bddf1d266f3ce30e57c040ac2f4894bc2eec7e34",
+    "prev": "2321f7d6331246ab77322362911e80cf",
+    "context": "host"
+   },
+   "2": {
+    "ref": "glfw/3.3.8#0",
+    "options": "shared=False\nvulkan_static=False",
+    "package_id": "87788707645a6a7a0bda278a5f55360eeefe8ff3",
+    "prev": "8e833911eaf098732d93de5978cd13f0",
+    "requires": [
+     "3"
+    ],
+    "context": "host"
+   },
+   "3": {
+    "ref": "opengl/system#96cbfe3a344598a4edcfbd82b9ac978f",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "8a765353a7971363b01b935d604ee7da",
+    "context": "host"
+   },
+   "4": {
+    "ref": "flecs/3.0.4#0",
+    "options": "shared=False",
+    "package_id": "164640aad040835ac89882393a96d89200694f04",
+    "prev": "27dde6ab4fc17abc35619d354f31caa8",
+    "context": "host"
+   },
+   "5": {
+    "ref": "tl-expected/20190710#0",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "d407803ce1f342db67f2b5190c612331",
+    "context": "host"
+   },
+   "6": {
+    "ref": "assimp/5.2.2#0",
+    "options": "double_precision=False\nshared=False\nwith_3d=True\nwith_3ds=True\nwith_3ds_exporter=True\nwith_3mf=True\nwith_3mf_exporter=True\nwith_ac=True\nwith_amf=True\nwith_ase=True\nwith_assbin=True\nwith_assbin_exporter=True\nwith_assjson_exporter=True\nwith_assxml_exporter=True\nwith_b3d=True\nwith_blend=True\nwith_bvh=True\nwith_cob=True\nwith_collada=True\nwith_collada_exporter=True\nwith_csm=True\nwith_dxf=True\nwith_fbx=True\nwith_fbx_exporter=True\nwith_gltf=True\nwith_gltf_exporter=True\nwith_hmp=True\nwith_ifc=True\nwith_iqm=True\nwith_irr=True\nwith_irrmesh=True\nwith_lwo=True\nwith_lws=True\nwith_m3d=True\nwith_m3d_exporter=True\nwith_md2=True\nwith_md3=True\nwith_md5=True\nwith_mdc=True\nwith_mdl=True\nwith_mmd=True\nwith_ms3d=True\nwith_ndo=True\nwith_nff=True\nwith_obj=True\nwith_obj_exporter=True\nwith_off=True\nwith_ogre=True\nwith_opengex=True\nwith_opengex_exporter=True\nwith_pbrt_exporter=True\nwith_ply=True\nwith_ply_exporter=True\nwith_q3bsp=True\nwith_q3d=True\nwith_raw=True\nwith_sib=True\nwith_smd=True\nwith_step=True\nwith_step_exporter=True\nwith_stl=True\nwith_stl_exporter=True\nwith_terragen=True\nwith_x=True\nwith_x3d=True\nwith_x3d_exporter=True\nwith_x_exporter=True\nwith_xgl=True\nbzip2:build_executable=True\nbzip2:shared=False\nclipper:shared=False\ndraco:enable_backwards_compatibility=True\ndraco:enable_mesh_compression=True\ndraco:enable_point_cloud_compression=True\ndraco:enable_predictive_edgebreaker=True\ndraco:enable_standard_edgebreaker=True\ndraco:shared=False\ndraco:target=draco\nkuba-zip:shared=False\nminizip:bzip2=True\nminizip:shared=False\nminizip:tools=False\nopenddl-parser:shared=False\npoly2tri:shared=False\npugixml:header_only=False\npugixml:no_exceptions=False\npugixml:shared=False\npugixml:wchar_mode=False\nstb:with_deprecated=True\nzlib:shared=False",
+    "package_id": "1b4291ba5a28679d2d95c2798e096fccf50f638c",
+    "prev": "5cb079edcbd0d2db9a899711acd526c3",
+    "requires": [
+     "7",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "8",
+     "15",
+     "16",
+     "17",
+     "18"
+    ],
+    "context": "host"
+   },
+   "7": {
+    "ref": "minizip/1.2.12#0",
+    "options": "bzip2=True\nshared=False\ntools=False\nbzip2:build_executable=True\nbzip2:shared=False\nzlib:shared=False",
+    "package_id": "ceba830b4ab3226cf201e29b11e7d3683bce38f2",
+    "prev": "324364fc20e8e1a9cd183fafb86af285",
+    "requires": [
+     "8",
+     "9"
+    ],
+    "context": "host"
+   },
+   "8": {
+    "ref": "zlib/1.2.12#0",
+    "options": "shared=False",
+    "package_id": "164640aad040835ac89882393a96d89200694f04",
+    "prev": "a59aabd5e7ad0ab1706339f644406f89",
+    "context": "host"
+   },
+   "9": {
+    "ref": "bzip2/1.0.8#0",
+    "options": "build_executable=True\nshared=False",
+    "package_id": "d74f69022acf854c1ce6f27efa07ccbb6504e4b1",
+    "prev": "ac0198b05f83f6de967655e6588548c8",
+    "context": "host"
+   },
+   "10": {
+    "ref": "utfcpp/3.2.1#0",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "084a6908e9a6a65c1640c4a3d8e01ad2",
+    "context": "host"
+   },
+   "11": {
+    "ref": "pugixml/1.12.1#0",
+    "options": "header_only=False\nno_exceptions=False\nshared=False\nwchar_mode=False",
+    "package_id": "255fef913b09852b9ac19f13fe91677114965382",
+    "prev": "5c9ec41bf326539498bd9b5959bfa401",
+    "context": "host"
+   },
+   "12": {
+    "ref": "kuba-zip/0.2.4#0",
+    "options": "shared=False",
+    "package_id": "164640aad040835ac89882393a96d89200694f04",
+    "prev": "fefae8159fb9941047ac00135ff4fde2",
+    "context": "host"
+   },
+   "13": {
+    "ref": "poly2tri/cci.20130502#0",
+    "options": "shared=False",
+    "package_id": "255fef913b09852b9ac19f13fe91677114965382",
+    "prev": "2d2bedb7514bacdf509021f7feb7d504",
+    "context": "host"
+   },
+   "14": {
+    "ref": "rapidjson/cci.20211112#0",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "daf9deb22d0dc3cc6f5327b6f9ca6906",
+    "context": "host"
+   },
+   "15": {
+    "ref": "draco/1.5.3#0",
+    "options": "enable_backwards_compatibility=True\nenable_mesh_compression=True\nenable_point_cloud_compression=True\nenable_predictive_edgebreaker=True\nenable_standard_edgebreaker=True\nshared=False\ntarget=draco",
+    "package_id": "1101f4821e3930bb4b4a4eea735c4f34adea5b3b",
+    "prev": "21041e4ae5c8585c714af27725e0b018",
+    "context": "host"
+   },
+   "16": {
+    "ref": "clipper/4.10.0#0",
+    "options": "shared=False",
+    "package_id": "255fef913b09852b9ac19f13fe91677114965382",
+    "prev": "b877a3f9722e3fa28518dad998a8b468",
+    "context": "host"
+   },
+   "17": {
+    "ref": "stb/cci.20210910#0",
+    "options": "with_deprecated=True",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "2652efe6fa5cdf90f66b5a193aad22fd",
+    "context": "host"
+   },
+   "18": {
+    "ref": "openddl-parser/0.5.0#0",
+    "options": "shared=False",
+    "package_id": "255fef913b09852b9ac19f13fe91677114965382",
+    "prev": "aaeb4838657aa5afb2e4f853fe0cc344",
+    "context": "host"
+   },
+   "19": {
+    "ref": "glm/cci.20220420#0",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "20": {
+    "ref": "luau/0.544#4ef3a2b2d3b42c65d394e01c9311b6fa",
+    "options": "shared=False\nwith_cli=False\nwith_web=False",
+    "package_id": "255fef913b09852b9ac19f13fe91677114965382",
+    "prev": "9c76650e736c5c884177ab315785c654",
+    "context": "host"
+   }
+  },
+  "revisions_enabled": true
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Debug\ncompiler=Visual Studio\ncompiler.cppstd=20\ncompiler.runtime=MDd\ncompiler.version=17\nos=Windows\nos_build=Windows\n[options]\n[build_requires]\n[env]\n"
+}

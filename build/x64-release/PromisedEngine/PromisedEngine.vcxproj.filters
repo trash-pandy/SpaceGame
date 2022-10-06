@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Source\PromisedEngine\build\x64-release\PromisedEngine\CMakeFiles\PromisedEngine.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Source\PromisedEngine\PromisedEngine\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Rendering\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Source\PromisedEngine\PromisedEngine\Components\Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Rendering\Shaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Models.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Source\PromisedEngine\PromisedEngine\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Rendering\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\PromisedEngine\Components\Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Rendering\Shaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\PromisedEngine\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Models.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\PromisedEngine\Engine\Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\build\x64-release\PromisedEngine\CMakeFiles\PromisedEngine.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\build\x64-release\PromisedEngine\CMakeFiles\PromisedEngine.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\build\x64-release\PromisedEngine\CMakeFiles\PromisedEngine.dir\MinSizeRel\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Source\PromisedEngine\build\x64-release\PromisedEngine\CMakeFiles\PromisedEngine.dir\RelWithDebInfo\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Source\PromisedEngine\PromisedEngine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9267D135-689A-359B-98A3-6E47E8C23F7B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{4EE9260F-92B5-3FDC-BD33-76197D3C17D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0A08FA90-E33B-365F-B687-112D8E1BCC80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
