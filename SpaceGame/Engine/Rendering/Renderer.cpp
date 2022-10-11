@@ -1,6 +1,6 @@
 #include "Engine/Rendering/Renderer.h"
 
-using namespace promise::renderer;
+using namespace engi::renderer;
 
 namespace
 {
@@ -9,7 +9,7 @@ namespace
 	std::vector<DrawCommand> command_list;
 }
 
-Mesh* promise::renderer::create_mesh(std::vector<Vertex> in_vertices)
+Mesh* engi::renderer::create_mesh(std::vector<Vertex> in_vertices)
 {
 	const auto start = vertices.size();
 	if (start + in_vertices.size() > vertices.capacity())
@@ -23,14 +23,14 @@ Mesh* promise::renderer::create_mesh(std::vector<Vertex> in_vertices)
 	return &allocated_meshes.emplace_back(start, end - start);
 }
 
-void promise::renderer::clear()
+void engi::renderer::clear()
 {
 }
 
-void promise::renderer::draw(Mesh* mesh, DrawCommand command)
+void engi::renderer::draw(Mesh* mesh, DrawCommand command)
 {
 }
 
-void promise::renderer::submit()
+void engi::renderer::submit()
 {
 }

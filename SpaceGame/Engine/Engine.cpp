@@ -1,6 +1,6 @@
 #include "Engine/Engine.h"
 
-flecs::world* promise::get_registry()
+flecs::world* engi::get_registry()
 {
 	static flecs::world world;
 	return &world;

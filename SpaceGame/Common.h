@@ -25,4 +25,7 @@
 #include <glm/gtx/string_cast.hpp>
 #include <glm/gtx/vec_swizzle.hpp>
 
+#include <msdfgen/msdfgen.h>
+#include <msdfgen/msdfgen-ext.h>
+
 #include "Application.h"

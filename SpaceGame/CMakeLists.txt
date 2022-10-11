@@ -16,7 +16,7 @@ add_executable(SpaceGame
 	"Engine/Rendering/Shaders.h"
 	"Application.h"
 	"Engine/Models.h"
-	"Engine/Models.cpp" "Engine/Input.h" "Engine/Input.cpp")
+	"Engine/Models.cpp" "Engine/Input.h" "Engine/Input.cpp" "Engine/Text.h" "Engine/Text.cpp")
 set_property(TARGET SpaceGame PROPERTY CXX_STANDARD 20)
 target_precompile_headers(SpaceGame PRIVATE "Common.h")
 target_link_libraries(SpaceGame
@@ -27,7 +27,8 @@ target_link_libraries(SpaceGame
 		CONAN_PKG::tl-expected
 		CONAN_PKG::assimp
 		CONAN_PKG::glm
-		CONAN_PKG::luau)
+		CONAN_PKG::luau
+		CONAN_PKG::msdfgen)
 target_include_directories(SpaceGame PRIVATE "./")
 
 file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/bin)

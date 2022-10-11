@@ -1,6 +1,6 @@
 #include "Engine/Rendering/Shaders.h"
 
-using namespace promise;
+using namespace engi;
 
 ShaderUniform::ShaderUniform(const uint32_t in_program, const char* name)
 	: program(in_program)

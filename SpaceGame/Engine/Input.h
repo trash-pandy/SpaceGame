@@ -2,7 +2,7 @@
 
 #include "Common.h"
 
-namespace promise::input
+namespace engi::input
 {
 	struct Key
 	{

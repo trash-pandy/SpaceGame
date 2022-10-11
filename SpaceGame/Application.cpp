@@ -2,22 +2,11 @@
 #include "Engine/Engine.h"
 #include "Engine/Input.h"
 #include "Engine/Models.h"
+#include "Engine/Text.h"
 #include "Engine/Rendering/Shaders.h"
 
-using namespace promise;
+using namespace engi;
 using namespace std::literals;
-
-tl::expected<std::string, std::string> read_file(const std::string& filename)
-{
-	if (const auto file = std::fstream(filename))
-	{
-		auto out = std::stringstream();
-		out << file.rdbuf();
-		return out.str();
-	}
-	
-	return tl::make_unexpected("failed to read "s + filename);
-}
 
 void APIENTRY gl_message_callback(
 	GLenum source, GLenum type, unsigned int id, GLenum severity,
@@ -35,7 +24,7 @@ int main()
 #endif
 	const auto window = glfwCreateWindow(800, 600, "spaaaaace", nullptr, nullptr);
 	glfwMakeContextCurrent(window);
-	
+
 	gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
 
 #ifndef NDEBUG
@@ -44,31 +33,28 @@ int main()
 	glDebugMessageCallback(gl_message_callback, nullptr);
 	glDebugMessageControl(GL_DONT_CARE, GL_DONT_CARE, GL_DONT_CARE, 0, nullptr, true);
 #endif
-	
+
 	ShaderPipeline debug;
 	debug.add_shader("res/shaders/debug.vert", GL_VERTEX_SHADER);
 	debug.add_shader("res/shaders/debug.frag", GL_FRAGMENT_SHADER);
 	debug.link();
-	debug.use();
-	
+
+	ShaderPipeline font;
+	font.add_shader("res/shaders/font.vert", GL_VERTEX_SHADER);
+	font.add_shader("res/shaders/font.frag", GL_FRAGMENT_SHADER);
+	font.link();
+
 	auto& u_camera_mvp = debug["camera_mvp"];
 	auto& u_camera_model = debug["camera_model"];
 	auto& u_camera_model_inv = debug["camera_model_inv"];
 	auto& u_camera_pos = debug["camera_pos"];
 
-	auto camera_pos = glm::vec3 { 0, 0.5, 4 };
+	auto camera_pos = glm::vec3{0, 0.5, 4};
 
-	glEnable(GL_DEPTH_TEST);
-	glDepthFunc(GL_LESS);
-
-	glEnable(GL_CULL_FACE);
-	glCullFace(GL_BACK);
-	glFrontFace(GL_CCW);
-	
 	std::vector<std::shared_ptr<Actor>> actors;
-	auto ship = actors.emplace_back(std::make_shared<Actor>("res/models/ship.obj"));
+	auto ship = actors.emplace_back(std::make_shared<Actor>("res/models/ship.glb"));
 	auto station = actors.emplace_back(std::make_shared<Actor>("res/models/station.obj"));
-	station->position = { 4, 0, -10 };
+	station->position = {4, 0, -10};
 
 	{
 		Model model_asteroids("res/models/asteroids.obj");
@@ -76,11 +62,24 @@ int main()
 		auto angle = glm::identity<glm::quat>();
 		for (auto& asteroid : model_asteroids.meshes | std::views::values)
 		{
-			auto actor = actors.emplace_back(std::make_shared<Actor>(Model{ asteroid }));
+			auto actor = actors.emplace_back(std::make_shared<Actor>(Model{asteroid}));
 			angle *= angleAxis(glm::two_pi<float>() / n_meshes, glm::vec3(0, 1, 0));
 			actor->position = angle * glm::vec3(0, 0, -5);
 		}
 	}
+
+	auto& font_renderer = FontRendererSingleton::get();
+	Font silkscreen("res/fonts/silkscreen/Silkscreen-Regular.ttf");
+
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LESS);
+
+	glEnable(GL_CULL_FACE);
+	glCullFace(GL_BACK);
+	glFrontFace(GL_CCW);
+
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 	glClearColor(0.4, 0.6, 0.9, 0.0);
 	while (!glfwWindowShouldClose(window))
@@ -122,12 +121,12 @@ int main()
 		}
 		last_mouse_x = current_mouse_x;
 		last_mouse_y = current_mouse_y;
-		
-		ship->rotation *= angleAxis(-dt_mouse_x, glm::vec3 { 0, 1, 0 });
-		ship->rotation *= angleAxis(-dt_mouse_y, glm::vec3 { 1, 0, 0 });
 
-		glm::vec3 motion {};
-		motion += ship->rotation * glm::vec3 {
+		ship->rotation *= angleAxis(-dt_mouse_x, glm::vec3{0, 1, 0});
+		ship->rotation *= angleAxis(-dt_mouse_y, glm::vec3{1, 0, 0});
+
+		glm::vec3 motion{};
+		motion += ship->rotation * glm::vec3{
 			-input::map_key(GLFW_KEY_A, GLFW_KEY_D),
 			-input::map_key(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_SPACE),
 			-input::map_key(GLFW_KEY_W, GLFW_KEY_S)
@@ -140,20 +139,28 @@ int main()
 		glm::quat camera_rot = conjugate(ship->rotation);
 		camera_pos = ship->position + ship->rotation * glm::vec3(0, 1, 4);
 
-		if (input::get_key(GLFW_KEY_TAB).is_down)
+		if (input::is_pressed(GLFW_KEY_TAB))
 		{
-			camera_rot = glm::identity<glm::quat>();
-			camera_pos = glm::vec3(0, 0.5, 4);
+			glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+			glDisable(GL_CULL_FACE);
+		}
+
+		if (input::is_released(GLFW_KEY_TAB))
+		{
+			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+			glEnable(GL_CULL_FACE);
 		}
 
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		
+
 		glm::mat4
 			view = mat4_cast(camera_rot) * translate(glm::mat4(1.0f), -camera_pos),
 			proj = glm::perspectiveFov(glm::radians(60.f), 800.f, 600.f, 0.1f, 100.f);
 		glm::mat4 vp = proj * view;
-		
-		station->rotation *= angleAxis(glm::pi<float>() / 2 * dt, glm::vec3 { 0, 1, 0 });
+
+		station->rotation *= angleAxis(glm::pi<float>() / 2 * dt, glm::vec3{0, 1, 0});
+
+		debug.use();
 		for (const auto& actor : actors)
 		{
 			glm::mat4 model = actor->get_model_matrix();
@@ -163,7 +170,14 @@ int main()
 			u_camera_pos = camera_pos;
 			actor->draw();
 		}
-		
+
+		glClear(GL_DEPTH_BUFFER_BIT);
+
+		font.use();
+		font_renderer.begin(window);
+		silkscreen.draw_text(window, L"Space Game!", glm::vec2 { 0, 0 }, glm::vec2 {800, 1000});
+		font_renderer.end();
+
 		glfwSwapBuffers(window);
 	}
 }
@@ -230,4 +244,16 @@ void APIENTRY gl_message_callback(
 		break;
 	}
 	std::cout << std::endl << std::endl;
+}
+
+tl::expected<std::string, std::string> read_file(const std::string& filename)
+{
+	if (const auto file = std::fstream(filename))
+	{
+		auto out = std::stringstream();
+		out << file.rdbuf();
+		return out.str();
+	}
+
+	return tl::make_unexpected("failed to read "s + filename);
 }

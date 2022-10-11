@@ -23,9 +23,11 @@ conan_cmake_configure(
         assimp/5.2.2
         glm/cci.20220420
         luau/0.544
+        msdfgen/1.9.1
     OPTIONS
         glad:gl_profile=core
         glad:gl_version=4.5
+        glad:extensions=GL_ARB_bindless_texture
     GENERATORS
         cmake)
 

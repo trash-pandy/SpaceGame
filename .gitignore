@@ -365,6 +365,5 @@ FodyWeavers.xsd
 build/
 out/
 
-*.obj
-*.mtl
+!models/*.obj
 *.blend1

@@ -1,8 +1,7 @@
 #pragma once
 #include "Common.h"
 
-namespace promise
+namespace engi
 {
 	flecs::world* get_registry();
 }
-
